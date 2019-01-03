@@ -1,0 +1,103 @@
+function hidePreloadPage()
+{
+    if (document.getElementById) {
+        document.getElementById('prepage').style.visibility = 'hidden';
+    } else {
+        if (document.layers) { //NS4
+            document.prepage.visibility = 'hidden';
+        }
+        else { //IE4
+            document.all.prepage.style.visibility = 'hidden';
+        }
+    }
+}
+
+function getHeight()
+{
+    if (typeof(window.innerHeight) == 'number') return window.innerHeight; //Non-IE
+    else if (document.documentElement && document.documentElement.clientHeight) return document.documentElement.clientHeight; //IE 6+ in 'standards compliant mode'
+    else if (document.body && document.body.clientHeight) return document.body.clientHeight; //IE 4
+}
+function getWidth()
+{
+    if (typeof(window.innerWidth) == 'number') return window.innerWidth; //Non-IE
+    else if (document.documentElement && document.documentElement.clientWidth) return document.documentElement.clientWidth; //IE 6+ in 'standards compliant mode'
+    else if (document.body && document.body.clientWidth) return document.body.clientWidth; //IE 4
+}
+function pleaseWaitMsg()
+{
+    var pw = document.getElementById('pwait').style;
+//    pw.top = (getHeight() / 2 - parseInt(pw.height) / 2) + 'px';
+//    pw.left = (getWidth() / 2 - parseInt(pw.width) / 2) + 'px';
+    pw.display = 'block';
+}
+
+function newImage(arg) {
+    if (document.images) {
+        rslt = new Image();
+        rslt.src = arg;
+        return rslt;
+    }
+}
+
+function changeImages() {
+    if (document.images && (preloadFlag == true)) {
+        for (var i = 0; i < changeImages.arguments.length; i += 2) {
+            document[changeImages.arguments[i]].src = changeImages.arguments[i + 1];
+        }
+    }
+}
+var preloadFlag = false;
+function preloadImages(path) {
+    window.focus();
+    if (document.images) {
+        var ru_over = newImage(path + "design_08.gif");
+        var ua_over = newImage(path + "design_10.gif");
+        var gb_over = newImage(path + "design_12.gif");
+        preloadFlag = true;
+    }
+}
+
+
+var agt = navigator.userAgent.toLowerCase();
+var is_ie = ((agt.indexOf("msie") != -1) && (agt.indexOf("opera") == -1));
+var is_opera = (agt.indexOf("opera") != -1);
+var is_nav = ((agt.indexOf('mozilla') != -1) && (agt.indexOf('spoofer') == -1)
+        && (agt.indexOf('compatible') == -1) && (agt.indexOf('opera') == -1)
+        && (agt.indexOf('webtv') == -1) && (agt.indexOf('hotjava') == -1));
+
+
+function getElementById(id) {
+    if (document.all)
+        return document.all[id];
+    if (document.getElementById(id))
+        return document.getElementById(id);
+    return null;
+}
+
+function getDocumentElementById(document1, id) {
+    if (document1.all)
+        return document1.all[id];
+    if (document1.getElementById(id))
+        return document1.getElementById(id);
+    return null;
+}
+
+function changeStyleClass(element, sClass) {
+    element.className = sClass;
+}
+
+function profile(user_id) {
+    window.open(contextPath + "/users/profile.do?id=" + user_id, "profile", "toolbar=no,scrollbars=yes,top=50,left=50,width=800,height=600");
+}
+
+function create_profile() {
+    window.open(contextPath + "/users/profile/new.do", "profile", "toolbar=no,scrollbars=yes,top=50,left=50,width=800,height=600");
+}
+
+function sms() {
+    window.open(contextPath + "/sms.do", "sms", "toolbar=no,scrollbars=yes,top=50,left=50,width=600,height=450");
+}
+function help(path) {
+    window.open(fullPath + path, "sms", "addressbar=yes,location=1,scrollbars=yes,resizable=yes,top=0,left=0,width=1060,height=750");
+}

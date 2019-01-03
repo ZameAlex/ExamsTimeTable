@@ -1,0 +1,30 @@
+td.rt
+{BORDER-RIGHT: #041347 1px solid; PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; MARGIN: 4px; PADDING-TOP: 4px; BORDER-BOTTOM: #041347 1px solid;
+}
+td.www
+{
+BORDER-RIGHT: #041347 1px solid;BORDER-left: #041347 1px solid;BORDER-bottom: #041347 1px solid;BORDER-top: #041347 1px solid; PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; MARGIN: 1px; PADDING-TOP: 1px; BORDER-BOTTOM: #041347 1px solid;
+}
+td.br
+{BORDER-RIGHT: #b01717 1px solid;BORDER-bottom:#041347  1px solid; PADDING-RIGHT: 4px; 
+PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; MARGIN: 4px; PADDING-TOP: 4px;
+}
+td.r
+{BORDER-RIGHT: #b01717 1px solid; PADDING-RIGHT: 4px; 
+PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; MARGIN: 4px; PADDING-TOP: 4px;
+}
+td.b
+{BORDER-bottom: #041347 1px solid; PADDING-RIGHT: 4px; PADDING-LEFT: 4px; 
+PADDING-BOTTOM: 4px; MARGIN: 4px; PADDING-TOP: 4px;
+}
+td.ba
+{BORDER-bottom: #041347 1px solid; border-top: #041347 1px solid; PADDING-RIGHT: 4px; PADDING-LEFT: 4px; 
+PADDING-BOTTOM: 4px; MARGIN: 4px; PADDING-TOP: 4px;
+}
+td.round
+{BORDER-bottom: #041347 1px solid;
+BORDER-top: #041347 1px solid;
+BORDER-right: #041347 1px solid;
+BORDER-left: #041347 1px solid;
+FONT-SIZE: 7pt 
+}

@@ -1,0 +1,340 @@
+body, td {
+    font-family: verdana;
+    font-size: 8pt;
+    color: #003366;
+    scrollbar-face-color: #E6E7EB;
+    scrollbar-highlight-color: #E6E7EB;
+    scrollbar-3dlight-color: #94A0B0;
+    scrollbar-darkshadow-color: #ffffff;
+    scrollbar-shadow-color: #94A0B0;
+    scrollbar-arrow-color: #ffffff;
+    scrollbar-track-color: #E6E7EB;
+}
+
+a {
+    text-decoration: underline;
+    color: #003366
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a.selected {
+    text-decoration: underline;
+    color: #B01717;
+}
+
+a.selected:hover {
+    text-decoration: none;
+}
+
+a.hotmenu {
+    text-decoration: none;
+    font-weight: bold;
+    color: #B01717;
+    font-size: 7pt;
+}
+
+a.hotmenu:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a.login {
+    text-decoration: none;
+    color: #37446A;
+    font-size: 7pt;
+    font-weight: bold;
+    font-family: Georgia;
+}
+
+a.login:hover {
+    text-decoration: none;
+    color: #37446A;
+    font-size: 7pt;
+    font-weight: bold;
+    font-family: Georgia;
+}
+
+textarea {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    scrollbar-face-color: #E6E7EB;
+    scrollbar-highlight-color: #E6E7EB;
+    scrollbar-3dlight-color: #94A0B0;
+    scrollbar-darkshadow-color: #94A0B0;
+    scrollbar-shadow-color: #ffffff;
+    scrollbar-arrow-color: #ffffff;
+    scrollbar-track-color: #E6E7EB;
+}
+
+form {
+    display: inline;
+    margin-bottom: 0px;
+}
+
+img {
+    border-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.successMsg {
+    width: 400px;
+    border: 2px solid #041347;
+    padding: 1px;
+    background-color: #D9E1F1;
+    margin-bottom: 10px;
+}
+
+div.errorMsg {
+    width: 400px;
+    border: 2px solid #c00;
+    color: #c00;
+    padding: 1px;
+    background-color: #FEE0E0;
+    margin-bottom: 10px;
+}
+
+.login {
+    color: #37446A;
+    font-size: 7pt;
+    font-weight: bold;
+    font-family: Georgia;
+}
+
+.submit {
+    background: transparent;
+    color: #37446A;
+    width: 30px;
+    border: 0;
+    font-size: 7pt;
+    font-weight: bold;
+    font-family: Georgia;
+    cursor: pointer;
+}
+
+input.login {
+    COLOR: #000000;
+    BACKGROUND: #F0F1F3;
+    BORDER-BOTTOM: 1px outset;
+    BORDER-LEFT: 1px inset;
+    BORDER-RIGHT: 1px outset;
+    BORDER-TOP: 1px inset;
+    FONT-FAMILY: tahoma, verdana, arial;
+    FONT-SIZE: 7pt;
+    padding: 1pt;
+    width: 70pt;
+    height: 14; /*text-align:center;*/
+}
+
+input.password {
+    COLOR: #000000;
+    BACKGROUND: #F0F1F3;
+    BORDER-BOTTOM: 1px outset;
+    BORDER-LEFT: 1px inset;
+    BORDER-RIGHT: 1px outset;
+    BORDER-TOP: 1px inset;
+    FONT-FAMILY: tahoma, verdana, arial;
+    FONT-SIZE: 7pt;
+    padding: 1pt;
+    width: 70pt;
+    height: 14; /*text-align:center;*/
+}
+
+input {
+    COLOR: #000000;
+    BACKGROUND: #ffffff;
+    BORDER-BOTTOM: 1px outset;
+    BORDER-LEFT: 1px inset;
+    BORDER-RIGHT: 1px outset;
+    BORDER-TOP: 1px inset;
+    FONT-FAMILY: tahoma, verdana, arial;
+    FONT-SIZE: 9pt;
+    padding: 1pt;
+    width: 80pt;
+    height: 18;
+}
+
+textarea {
+    COLOR: #000000;
+    BACKGROUND: #ffffff;
+    BORDER-BOTTOM: 1px outset;
+    BORDER-LEFT: 1px inset;
+    BORDER-RIGHT: 1px outset;
+    BORDER-TOP: 1px inset;
+    FONT-FAMILY: tahoma, verdana, arial;
+    FONT-SIZE: 9pt;
+    padding: 1pt;
+    width: 80pt;
+}
+
+select {
+    font-family: Verdana, Arial, sans-serif;
+    background-color: #E4E4E4;
+    font-weight: bold;
+    border-width: 0px;
+    font-size: 10px;
+    color: #27387F;
+}
+
+/*button {
+    background-color: #E6E9F2;
+    color: #565F82;
+    font-family: verdana;
+    font-size: 9px;
+    border-top-color: #90AECF;
+    border-right-color: darkblue;
+    border-bottom-color: darkblue;
+    border-left-color: #90AECF;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+}*/
+
+textarea.with_border {
+    background-color: White;
+    font-size: 13px;
+    color: #27387F;
+    border: 2px solid #E3E3E3;
+    font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+    height: 20px;
+}
+
+input.with_border {
+    background-color: White;
+    font-size: 13px;
+    color: #27387F;
+    border: 2px solid #E3E3E3;
+    font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+    height: 20px;
+}
+
+/*page-level styles*/
+
+body.base {
+    margin: 0px;
+    font-family: Tahoma;
+    font-size: 10pt;
+    background-color: #E4E6ED;
+}
+
+img.layoutImg {
+    display: block;
+}
+
+a.menu {
+    font-size: 10px;
+    text-decoration: none;
+    color: #27387F;
+    font-weight: bold;
+    padding-right: 1px;
+    padding-left: 1px;
+}
+
+a.menu:hover {
+    font-size: 10px;
+    text-decoration: none;
+    color: #B01717;
+    font-weight: bold;
+    padding-right: 1px;
+    padding-left: 1px;
+}
+
+a.selectedmenu {
+    font-size: 10px;
+    text-decoration: none;
+    color: #B01717;
+    font-weight: bold;
+    padding-right: 1px;
+    padding-left: 1px;
+}
+
+a.selectedmenu:hover {
+    font-size: 10px;
+    text-decoration: none;
+    color: #B01717;
+    font-weight: bold;
+    padding-right: 1px;
+    padding-left: 1px;
+}
+
+/*BUTTON TAG*/
+table.actionbuttton {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+td.actionbuttton {
+    color: white;
+    font-size: 7pt;
+    vertical-align: middle;
+
+}
+
+.button {
+    background-color: #003366;
+    color: #ffffff;
+    font-family: verdana;
+    font-size: 9px;
+    width: 60px;
+    cursor: pointer;
+    border-style: none;
+    height: 15px;
+}
+
+.actionbutton {
+    background-color: #003366;
+    color: #ffffff;
+    font-family: verdana;
+    font-size: 9px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.checkbox {
+    width: 14px;
+    height: 14px;
+    border: 1px;
+    border-style: groove;
+}
+
+.radio {
+    border: 0px;
+    background-color: transparent;
+    width: 14px;
+    height: 14px;
+}
+
+a.tableheader {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a.tableheader:hover {
+    text-decoration: underline;
+}
+
+tr.tableheader {
+    background-color: #041347;
+    color: #ffffff;
+    font-family: verdana, arial;
+    font-size: 9pt;
+    height: 18px;
+}
+
+.privateImage {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}

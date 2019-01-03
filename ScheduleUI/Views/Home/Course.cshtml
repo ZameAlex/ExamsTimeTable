@@ -1,0 +1,39 @@
+﻿@model List<Course>
+@{
+	ViewData["Title"] = "Course";
+}
+<br />
+<div class="container">
+	@foreach (var item in Model)
+	{
+		@item.ToString()
+		@foreach (var division in item.Divisions)
+		 {
+
+			 <table class=" = table">
+				 @foreach (var group in division.Groups)
+				 {
+					 <thead>
+					 <tr>
+						 @foreach (var day in group.Days)
+						 {
+							 <th>@day.ToString("dd MMM ddd").ToLower();</th>
+						 }
+					 </tr>
+					 </thead>
+					 <tbody>
+					 <tr>
+						 @foreach (var exam in group.Lessons)
+						 {
+							 exam.GetExamInfo();
+						 }
+					 </tr>
+
+					 </tbody>
+				 }
+			 </table>
+		 }
+		<br/>
+	}
+	<a class="btn-success btn-lg" asp-action="AddCourse" asp-controller="Home">Add</a>
+</div>

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace ExamShedule
+namespace ScheduleLib
 {
-    class GroupTimetable
+    public   class GroupTimetable
     {
         public string Group { get; private set; }
         public List<string> Days { get; set; }
@@ -23,7 +23,7 @@ namespace ExamShedule
 
         public void AddElement(string day, string examInfo)
         {
-            Days.Add(day.Replace(".06"," червня"));
+            Days.Add(day);
             Exams.Add(examInfo);
         }
 

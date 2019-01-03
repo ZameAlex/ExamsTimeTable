@@ -1,0 +1,187 @@
+/*-----------------PAGER-----------------------------------------------------*/
+.pager a, .pager a:visited
+{
+	color: #000;
+	border: #D4D7DA 1px solid;
+	padding: 1px;
+	background-color: #EAEBEB;
+}
+.pager a:hover
+{
+	color: #666;
+	border: #EAECEF 1px solid;
+	padding: 1px;
+	background-color: #FFF;
+}
+
+select.pager{
+    font-size:7pt;
+}
+
+input.pager{
+    width:25px;
+}
+.selectedPageStyleClass{
+    color: #EAEBEB;
+    border: #D4D7DA 1px solid;
+    padding: 1px;
+    background-color:#041347;
+}
+/*-----------------SORTING----------------------------------------------------*/
+
+img.sortLink{
+    border:0;
+}
+a.sortLink {
+    color: #000000;
+    font-size: 9pt;
+    text-decoration: none;
+}
+
+a.sortLink:hover {
+    color: #f0f8ff;
+    text-decoration: underline;
+    font-size: 9pt;
+}
+/*-----------------SEARCH-----------------------------------------------------*/
+.printSearchDiv {
+    background-color: #DBDCE1;
+    color: #000000;
+    font-weight: bold;
+    border-style: solid;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    border-color: black;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+
+}
+
+.printSearchTableDiv {
+    background-color: #DBDCE1;
+    color: #000000;
+    font-weight: bold;
+    border-style: solid;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    border-color: black;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 5px;
+    width: 101%;
+    height: 100%;
+}
+
+body.search {
+    color: #000000;
+    background-color: #c3caf9;
+/*
+    scrollbar-face-color: #94A0B0;
+    scrollbar-highlight-color: #ffffff;
+    scrollbar-3dlight-color: #ffffff;
+    scrollbar-darkshadow-color: #ffffff;
+    scrollbar-shadow-color: #94A0B0;
+    scrollbar-arrow-color: #ffffff;
+    scrollbar-track-color: #ffffff;
+*/
+}
+
+div.searchPages {
+    background-color: #DBDCE1;
+    font-size: 9pt;
+}
+
+div.searchDivResult {
+    height: 345px;
+    width: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+a.extendedSearch {
+    color: gray;
+    font-size: 11pt
+}
+
+a.extendedSearch:active {
+    color: #000000;
+    text-decoration: none;
+    font-size: 11pt;
+}
+
+a.extendedSearch:hover {
+    color: #000000;
+    text-decoration: none;
+    font-size: 11pt;
+}
+
+a.extendedSearch:link {
+    color: #000000;
+    text-decoration: none;
+    font-size: 11pt;
+}
+
+a.extendedSearch:visited {
+    text-decoration: none;
+    font-size: 11pt;
+}
+
+a.search {
+    color: #000000;
+    font-size: 10pt;
+    text-decoration:none;
+}
+
+a.search:active {
+    color: #ffffff;
+    text-decoration: overline;
+    font-size: 10pt;
+}
+
+a.search:hover {
+    color: #ffffff;
+    text-decoration:overline;
+    font-size: 10pt;
+}
+
+a.search:link {
+    color: #000000;
+    text-decoration: none;
+    font-size: 10pt;
+}
+
+a.search:visited {
+    font-size: 10pt;
+}
+
+/*большая таблица*/
+table.searchTable {
+    font-family: arial;
+    font-size: 9pt;
+    background-color: #94A0B0; /*фон большой таблицы*/
+    width: 100%;
+    color: #FFFFFF;
+    border-color: #CF9958;
+    border-width: 0px;
+}
+
+tr.searchOnMouseOut {
+    font-family: Georgia;
+    color: #000000;
+    background-color: #E6E9F0;
+}
+
+tr.searchOnMouseMove {
+    font-family: Georgia;
+    background-color: #b0c4de;
+    color: #000000;
+}
+

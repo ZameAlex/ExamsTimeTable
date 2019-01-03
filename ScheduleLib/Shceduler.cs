@@ -1,11 +1,12 @@
 ﻿
+using ScheduleLib.Models;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace ExamShedule
+
+namespace ScheduleLib
 {
-	class Shceduler
+	public class Shceduler
 	{
 		public string Department { get; set; }
 		public int GroupsCount { get; set; }
