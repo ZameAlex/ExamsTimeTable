@@ -94,25 +94,25 @@ namespace SimpleUI
 		private void button3_Click(object sender, EventArgs e)
 		{
 			var tmpGroup = new Group();
-			tmpGroup.CreateName(Courses[1].Divisions[0], (sender as ListBox).Items.Count + 1, 2);
+			tmpGroup.CreateName(Courses[1].Divisions[0], listBox3.Items.Count + 1, 2);
 			Courses[1].Divisions[0].Groups.Add(tmpGroup);
-			(sender as ListBox).Items.Add(tmpGroup);
+			listBox3.Items.Add(tmpGroup);
 		}
 
 		private void button2_Click(object sender, EventArgs e)
 		{
 			var tmpGroup = new Group();
-			tmpGroup.CreateName(Courses[1].Divisions[1], (sender as ListBox).Items.Count + 1, 2);
+			tmpGroup.CreateName(Courses[1].Divisions[1], listBox2.Items.Count + 1, 2);
 			Courses[1].Divisions[1].Groups.Add(tmpGroup);
-			(sender as ListBox).Items.Add(tmpGroup);
+			listBox2.Items.Add(tmpGroup);
 		}
 
 		private void button1_Click(object sender, EventArgs e)
 		{
 			var tmpGroup = new Group();
-			tmpGroup.CreateName(Courses[1].Divisions[2], (sender as ListBox).Items.Count + 1, 2);
+			tmpGroup.CreateName(Courses[1].Divisions[2], listBox1.Items.Count + 1, 2);
 			Courses[1].Divisions[2].Groups.Add(tmpGroup);
-			(sender as ListBox).Items.Add(tmpGroup);
+			listBox1.Items.Add(tmpGroup);
 		}
 
 		private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -133,25 +133,25 @@ namespace SimpleUI
 		private void button6_Click(object sender, EventArgs e)
 		{
 			var tmpGroup = new Group();
-			tmpGroup.CreateName(Courses[2].Divisions[0], (sender as ListBox).Items.Count + 1, 3);
+			tmpGroup.CreateName(Courses[2].Divisions[0], listBox6.Items.Count + 1, 3);
 			Courses[2].Divisions[0].Groups.Add(tmpGroup);
-			(sender as ListBox).Items.Add(tmpGroup);
+			listBox6.Items.Add(tmpGroup);
 		}
 
 		private void button5_Click(object sender, EventArgs e)
 		{
 			var tmpGroup = new Group();
-			tmpGroup.CreateName(Courses[2].Divisions[1], (sender as ListBox).Items.Count + 1, 3);
+			tmpGroup.CreateName(Courses[2].Divisions[1], listBox5.Items.Count + 1, 3);
 			Courses[2].Divisions[1].Groups.Add(tmpGroup);
-			(sender as ListBox).Items.Add(tmpGroup);
+			listBox5.Items.Add(tmpGroup);
 		}
 
 		private void button4_Click(object sender, EventArgs e)
 		{
 			var tmpGroup = new Group();
-			tmpGroup.CreateName(Courses[2].Divisions[2], (sender as ListBox).Items.Count + 1, 3);
+			tmpGroup.CreateName(Courses[2].Divisions[2], listBox4.Items.Count + 1, 3);
 			Courses[2].Divisions[2].Groups.Add(tmpGroup);
-			(sender as ListBox).Items.Add(tmpGroup);
+			listBox4.Items.Add(tmpGroup);
 		}
 
 		private void listBox6_SelectedIndexChanged(object sender, EventArgs e)
@@ -174,25 +174,25 @@ namespace SimpleUI
 		private void button9_Click(object sender, EventArgs e)
 		{
 			var tmpGroup = new Group();
-			tmpGroup.CreateName(Courses[3].Divisions[0], (sender as ListBox).Items.Count + 1, 4);
+			tmpGroup.CreateName(Courses[3].Divisions[0], listBox9.Items.Count + 1, 4);
 			Courses[3].Divisions[0].Groups.Add(tmpGroup);
-			(sender as ListBox).Items.Add(tmpGroup);
+			listBox9.Items.Add(tmpGroup);
 		}
 
 		private void button8_Click(object sender, EventArgs e)
 		{
 			var tmpGroup = new Group();
-			tmpGroup.CreateName(Courses[3].Divisions[1], (sender as ListBox).Items.Count + 1, 4);
+			tmpGroup.CreateName(Courses[3].Divisions[1], listBox8.Items.Count + 1, 4);
 			Courses[3].Divisions[1].Groups.Add(tmpGroup);
-			(sender as ListBox).Items.Add(tmpGroup);
+			listBox8.Items.Add(tmpGroup);
 		}
 
 		private void button7_Click(object sender, EventArgs e)
 		{
 			var tmpGroup = new Group();
-			tmpGroup.CreateName(Courses[3].Divisions[2], (sender as ListBox).Items.Count + 1, 4);
+			tmpGroup.CreateName(Courses[3].Divisions[2], listBox7.Items.Count + 1, 4);
 			Courses[3].Divisions[2].Groups.Add(tmpGroup);
-			(sender as ListBox).Items.Add(tmpGroup);
+			listBox7.Items.Add(tmpGroup);
 		}
 
 		private void listBox9_SelectedIndexChanged(object sender, EventArgs e)
@@ -213,25 +213,25 @@ namespace SimpleUI
 		private void button12_Click(object sender, EventArgs e)
 		{
 			var tmpGroup = new Group();
-			tmpGroup.CreateName(Courses[4].Divisions[0], (sender as ListBox).Items.Count + 1, 5);
+			tmpGroup.CreateName(Courses[4].Divisions[0], listBox12.Items.Count + 1, 5);
 			Courses[4].Divisions[0].Groups.Add(tmpGroup);
-			(sender as ListBox).Items.Add(tmpGroup);
+			listBox12.Items.Add(tmpGroup);
 		}
 
 		private void button11_Click(object sender, EventArgs e)
 		{
 			var tmpGroup = new Group();
-			tmpGroup.CreateName(Courses[4].Divisions[1], (sender as ListBox).Items.Count + 1, 5);
+			tmpGroup.CreateName(Courses[4].Divisions[1], listBox11.Items.Count + 1, 5);
 			Courses[4].Divisions[1].Groups.Add(tmpGroup);
-			(sender as ListBox).Items.Add(tmpGroup);
+			listBox11.Items.Add(tmpGroup);
 		}
 
 		private void button10_Click(object sender, EventArgs e)
 		{
 			var tmpGroup = new Group();
-			tmpGroup.CreateName(Courses[4].Divisions[2], (sender as ListBox).Items.Count + 1, 5);
+			tmpGroup.CreateName(Courses[4].Divisions[2], listBox10.Items.Count + 1, 5);
 			Courses[4].Divisions[2].Groups.Add(tmpGroup);
-			(sender as ListBox).Items.Add(tmpGroup);
+			listBox10.Items.Add(tmpGroup);
 		}
 
 		private void listBox12_SelectedIndexChanged(object sender, EventArgs e)
@@ -252,25 +252,25 @@ namespace SimpleUI
 		private void button15_Click(object sender, EventArgs e)
 		{
 			var tmpGroup = new Group();
-			tmpGroup.CreateName(Courses[5].Divisions[0], (sender as ListBox).Items.Count + 1, 6);
+			tmpGroup.CreateName(Courses[5].Divisions[0], listBox15.Items.Count + 1, 6);
 			Courses[5].Divisions[0].Groups.Add(tmpGroup);
-			(sender as ListBox).Items.Add(tmpGroup);
+			listBox15.Items.Add(tmpGroup);
 		}
 
 		private void button14_Click(object sender, EventArgs e)
 		{
 			var tmpGroup = new Group();
-			tmpGroup.CreateName(Courses[5].Divisions[1], (sender as ListBox).Items.Count + 1, 6);
+			tmpGroup.CreateName(Courses[5].Divisions[1], listBox14.Items.Count + 1, 6);
 			Courses[5].Divisions[1].Groups.Add(tmpGroup);
-			(sender as ListBox).Items.Add(tmpGroup);
+			listBox14.Items.Add(tmpGroup);
 		}
 
 		private void button13_Click(object sender, EventArgs e)
 		{
 			var tmpGroup = new Group();
-			tmpGroup.CreateName(Courses[5].Divisions[2], (sender as ListBox).Items.Count + 1, 6);
+			tmpGroup.CreateName(Courses[5].Divisions[2], listBox13.Items.Count + 1, 6);
 			Courses[5].Divisions[2].Groups.Add(tmpGroup);
-			(sender as ListBox).Items.Add(tmpGroup);
+			listBox13.Items.Add(tmpGroup);
 		}
 
 		private void listBox15_SelectedIndexChanged(object sender, EventArgs e)
