@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 using ScheduleLib;
 using ScheduleLib.Models;
 
@@ -10,10 +11,11 @@ namespace ExamShedule
 	{
 		static void Main(string[] args)
 		{
-			StreamWriter writer = new StreamWriter("1.html");
+			Console.InputEncoding = Encoding.Default;
 			Shceduler sc = new Shceduler();
 			Console.WriteLine("Enter course");
 			Int32.TryParse(Console.ReadLine(), out int course);
+			StreamWriter writer = new StreamWriter($"{course}.html");
 			sc.Year = course;
 			Console.WriteLine("Enter department");
 			string department = Console.ReadLine();
@@ -23,20 +25,20 @@ namespace ExamShedule
 			sc.GroupsCount = groupsCount;
 			Console.WriteLine("Enter exams count");
 			Int32.TryParse(Console.ReadLine(), out int examsCount);
-			List<Lesson> lessons = new List<Lesson>();
-			for (int i = 0; i < examsCount; i++)
-			{
-				Lesson tmp = new Lesson();
-				Console.WriteLine("Enter lesson name");
-				tmp.Name = Console.ReadLine();
-				Console.WriteLine("Enter teacher name");
-				tmp.Teacher = Console.ReadLine();
-				Console.WriteLine("Enter class");
-				tmp.Class = Console.ReadLine();
-				lessons.Add(tmp);
-			}
 			for (int group = 0; group < groupsCount; group++)
 			{
+				List<Lesson> lessons = new List<Lesson>();
+				for (int i = 0; i < examsCount; i++)
+				{
+					Lesson tmp = new Lesson();
+					Console.WriteLine("Enter lesson name");
+					tmp.Name = Console.ReadLine();
+					Console.WriteLine("Enter teacher name");
+					tmp.Teacher = Console.ReadLine();
+					Console.WriteLine("Enter class");
+					tmp.Class = Console.ReadLine();
+					lessons.Add(tmp);
+				}
 				Console.WriteLine($"For {group + 1} group:");
 				List<int> dates = new List<int>();
 				for (int i = 0; i < examsCount; i++)

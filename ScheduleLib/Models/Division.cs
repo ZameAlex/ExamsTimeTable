@@ -9,7 +9,7 @@ namespace ScheduleLib.Models
 	{
 		public string Name { get; set; }
 		public int Number { get; set; }
-		public List<Group> Groups { get; set; }
+		public List<Group> Groups { get; set; } = new List<Group>();
 		public Course Owner { get; set; }
 	}
 }

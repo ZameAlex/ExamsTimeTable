@@ -13,7 +13,7 @@ namespace SimpleUI
 {
 	public partial class Form2 : Form
 	{
-		Group currentGroup;
+		readonly Group currentGroup;
 		public Form2(Group group)
 		{
 			currentGroup = group;
@@ -24,6 +24,11 @@ namespace SimpleUI
 		{
 			currentGroup.Lessons = new List<Lesson>(Int32.Parse(textBox1.Text));
 			currentGroup.Days = new List<DateTime>(Int32.Parse(textBox1.Text));
+			for (int i = 0; i < currentGroup.Days.Capacity; i++)
+			{
+				Form4 form = new Form4(currentGroup);
+				form.ShowDialog();
+			}
 		}
 	}
 }

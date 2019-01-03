@@ -8,7 +8,7 @@ using System.Xml.Linq;
 
 namespace ScheduleLib
 {
-    public   class GroupTimetable
+    public class GroupTimetable
     {
         public string Group { get; private set; }
         public List<string> Days { get; set; }
@@ -35,7 +35,7 @@ namespace ScheduleLib
                 new XAttribute("class", "rtab"));
             root.Add(CreateDaysTR());
             root.Add(CreateExamsTR());
-            return root.ToString();
+	        return root.ToString();
         }
 
         private XElement CreateDaysTR()
